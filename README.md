@@ -27,6 +27,18 @@ Asks for the water consumption (in m³) of 5 residences. For each one it says wh
 
 **Concepts:** `for` loop, conditionals, sum and average calculation.
 
+### `avaliacao-loja.c` — Store Rating
+
+Asks for the rating (from 0 to 10) given by each of 10 customers. It then prints the **average rating**. If the average is **below 7**, it shows an alert. Otherwise, it says the average is good (7 or more).
+
+**Concepts:** `for` loop, `float` variables, sum and average calculation, `if / else`.
+
+### `passos-app.c` — Steps Tracker
+
+Simulates a steps app with a daily goal of **10,000 steps**. Each hour, the program asks how many steps you took. It keeps adding them up until you reach the goal. At the end, it shows the total steps and how many hours it took.
+
+**Concepts:** `while` loop, counters, accumulators, `scanf` input.
+
 ## How to compile and run
 
 You need a C compiler such as [GCC](https://gcc.gnu.org/) (on Windows you can use [MinGW-w64](https://www.mingw-w64.org/) or MSYS2).
@@ -39,9 +51,17 @@ gcc cofrinho.c -o cofrinho
 # Water consumption
 gcc consumo-agua.c -o consumo-agua
 ./consumo-agua
+
+# Store rating
+gcc avaliacao-loja.c -o avaliacao-loja
+./avaliacao-loja
+
+# Steps tracker
+gcc passos-app.c -o passos-app
+./passos-app
 ```
 
-On Windows, run the executables as `cofrinho.exe` and `consumo-agua.exe`.
+On Windows, run the executables as `cofrinho.exe`, `consumo-agua.exe`, `avaliacao-loja.exe` and `passos-app.exe`.
 
 > **Tip:** If accented characters (á, ç, ã) look wrong in the Windows terminal, run `chcp 65001` first to switch the console to UTF-8.
 
